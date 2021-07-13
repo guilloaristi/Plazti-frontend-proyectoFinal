@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    background-color: #ab88ff;
+    font-family: 'Mulish', sans-serif;
+}
+
+.header {
+    background-color: #ab88ff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__img {
+    width: 200px;
+    /*cuando intente ponerle width y height se pixelo, basta con el width para dejar el logo en su forma adecuada. */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header__menu {
+    margin: 16px 40px 0 10px;
+}
+
+.header__menu p {
+    color: white;
+}
+
+.header__menu ul {
+    display: none;
+    /*  quiero ocultarlo por el momento */
+    list-style: none;
+    /* para quitar los puntos a los items de la lista desordenada. */
+    padding: 0%;
+    /* le quito el padding que tienen por defecto. */
+    position: absolute;
+    /* para ubicarlo respacto al padre.*/
+    width: 100px;
+    text-align: right;
+    /* como estan alineados los items en el menu desplegable*/
+    margin: 0px 0px 0px -12px;
+}
+
+.header__menu:hover ul,
+ul:hover {
+    display: block;
+    /* utilizando la seudoclase Hover para que al pasar el cursor aparezca el menu que tenia oculto con el display:none seleccionado anteriormente.*/
+    /* y con al hacer hover cambio el display none al display block.*/
+}
+
+.header__menu li {
+    margin: 10px 0px;
+}
+
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+    /* para quitar ese subrayado por defecto del hipervinculo etiqueta (a)*/
+}
+
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+
+.header__menu--profile {
+    width: 40px;
+    margin-right: 30px;
+    display: flex;
+}
