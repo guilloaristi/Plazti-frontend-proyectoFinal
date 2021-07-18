@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.header {
+    background-color: #08af77;
+}
+
+.header__img {
+    width: 200px;
+    /*cuando intente ponerle width y height se pixelo, basta con el width para dejar el logo en su forma adecuada. */
+    margin-top: 10px;
+    margin-left: 10px;
+}

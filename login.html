@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <!-- usando la metodologia de arquitectura BEM, en las clases -->
+        <img class="header__img" src="Recursos/logo-platzi-video-BW2.png" alt="LogoPlatzi">
+        <!-- usando la metodologia de arquitectura BEM -->
+
+    </header>
+    <section class="login">
+
+        <section class="login__container">
+            <h2>Inicia sesion </h2>
+            <form class="login__container--form" action="">
+                <input class="input" type="text" placeholder="Correo">
+                <!--primer input tipo texto para que el usuario ingrese algo, su correo o algun texto. -->
+                <input class="input" type="password" placeholder="Contrasena">
+                <!--input tipo password para que oculte el texto ingresado-->
+                <button class="button">Iniciar sesion</button>
+                <div class="login__container--remember--me">
+                    <label>
+                        <input type="checkbox" name="" id="cbox1" value="checkbox">Recuerdame
+                    </label>
+                    <a href="/">Olvide mi contrasena</a>
+                </div>
+
+            </form>
+
+            <section class="login__container--social--media">
+                <div><img src="/Recursos/icons8-logo-de-google-24.png" alt="Google"> Inicia sesion con Google</div>
+                <div><img src="/Recursos/icons8-twitter-30.png" alt="Twitter">Inicia sesion con Twitter</div>
+
+            </section>
+            <p class="login__container--register">No tienes ninguna cuenta <a href="/"> Registrate</a> </p>
+        </section>
+
+    </section>
+    <footer class="footer">
+        <a href="/">Terminos de uso</a>
+        <a href="/">Declaracion de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+
+</body>
+
+</html>
