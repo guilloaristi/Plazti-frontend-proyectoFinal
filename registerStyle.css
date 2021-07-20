@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.header {
+    background-color: #21c08b;
+    width: 100%;
+}
+
+.header__img {
+    width: 200px;
+    /*cuando intente ponerle width y height se pixelo, basta con el width para dejar el logo en su forma adecuada. */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.login {
+    background: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0px, 30px; no me esta tomando cuando ingreso varios valores de padding ni el min heigth. */
+    padding: 40px;
+    min-height: calc(100vh- 200px);
+    /*no me esta tomando el efecto deseado en el inspector se aprecia que no esta sirviendo esta propiedad. REVISAR !important; */
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    /*poner un poco mas blanco esta seccion, este contenedor. */
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 50px 30px;
+    color: white;
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background-color: transparent;
+    /* dandole 0px a los border que deseo eliminar logro el efecto que quiero en los inputs dejando solo la linea de borde abajo. */
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid white;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    height: 30px;
+    outline: none;
+}
+
+ ::placeholder {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.4);
+    /*el mismo efecto como de sombrear, opacar una seccion, boton o algo. */
+    height: 40px;
+    cursor: pointer;
+    /* efecto de manito al poner el cursor en el boton.importante */
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.login__container--iniciar--sesion {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.login__container--iniciar--sesion a {
+    color: white;
+    text-decoration: none;
+}
+
+.login__container--iniciar--sesion a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #ab88ff;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
